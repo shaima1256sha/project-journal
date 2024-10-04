@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  display: grid;
+  margin: 5px 0px;
+  grid-template-columns: 1fr auto;
+  place-items: center start;
+  line-height: 3.5rem;
+  margin: 0.5rem auto;
+}
+
+header li,
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Staatliches", sans-serif;
+  color: rgb(51, 51, 51);
+  font-size: 2rem;
+}
+
+header a {
+  display: block;
+  padding: 1rem;
+}
