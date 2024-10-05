@@ -14,7 +14,7 @@ a {
   font-size: 1.6rem;
   color: var(--dark);
   text-decoration: none;
-  
+
 }
 
 body {
@@ -22,8 +22,26 @@ body {
   font-size: 1.6rem;
   line-height: 2rem;
   color: var(--dark);
-  max-width: 1200px  ;
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
 }
 
 /* header */
@@ -100,6 +118,7 @@ header ul li {
 .text-primary:hover {
   opacity: 0.8;
 }
+
 /* & nav */
 nav {
   padding: 1rem;
@@ -108,7 +127,92 @@ nav {
   position: sticky;
   top: 0;
   background: #fff;
+
 }
-nav a{
+
+nav a {
   font-size: 1rem;
+}
+
+/* ^showcase */
+.showcase {
+  padding: 2rem 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+.showcase article:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+article p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.article-author {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.fa-solid {
+  font-weight: 900;
+  color: #555555;
+}
+
+.article-small {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 80px auto;
+  grid-template-rows: 80px;
+  grid-auto-rows: auto;
+  line-height: 1.2rem;
+}
+
+.article-small h3{
+  font-size: 1.1rem;
+}
+.article-small .article-content {
+  grid-column: span 2;
+  max-height: 6rem;
+  overflow: hidden;
+}
+.article-small .article-author, .article-small .text-hint {
+  grid-column: span 2;
+}
+/* .article-small p {
+  margin: 0.5rem 0;
+} */
+
+.article-author {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.article-small {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 80px auto;
+  grid-template-rows: 80px;
+  grid-auto-rows: auto;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
 }
