@@ -285,6 +285,7 @@ hr {
 }
 .articles article img {
   grid-area: img;
+  margin: 1rem;
 }
 .articles article p {
   margin: 0.2rem 0;
